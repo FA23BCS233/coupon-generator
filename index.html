@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+  <!-- Background Images -->
+  <div class="lines">
+    <img src="./assets/images/pattern-lines.svg" alt="">
+  </div>
+
+  <div class="squiggly-line-top">
+    <img src="./assets/images/pattern-squiggly-line-top.svg" alt="">
+  </div>
+
+  <div class="squiggly-line-bottom">
+    <img src="./assets/images/pattern-squiggly-line-bottom.svg" alt="">
+  </div>
+
+  <div class="circle-1">
+    <img src="./assets/images/pattern-circle.svg" alt="">
+  </div>
+
+  <div class="circle-2">
+    <img src="./assets/images/pattern-circle.svg" alt="">
+  </div>
+
+  <!-- Backgroud images ends here -->
+
+  <div id="main">
+    <header>
+      <img src="./assets/images/logo-full.svg" alt="logo">
+    </header>
+
+    <!-- Form Section Starts -->
+    <section id="form-section">
+
+      <h1 class="form-heading">
+        Your Journey to Coding Conf<br>2025 Starts Here!
+      </h1>
+      <h2 class="form-sub-heading">
+        Secure your spot at next year's biggest coding conference.
+      </h2>
+
+      <!-- Form -->
+      <form id="form">
+
+        <!-- Upload button -->
+        <div class="input upload-btn">
+          <input type="file" name="avatar" id="avatar-btn" hidden>
+
+          <label for="avatar-btn">
+            <p>Upload Avatar</p>
+            <div class="input-box">
+              <div class="upload-icon">
+                <img src="./assets/images/icon-upload.svg" alt="upload...">
+              </div>
+              <span>Drag and drop or click to upload</span>
+            </div>
+          </label>
+
+          <div class="info no-state">
+            <img src="./assets/images/icon-info.svg">
+            <span>
+              Upload your photo (JPG or PNG, max size: 500KB).
+            </span>
+          </div>
+        </div>
+
+        <!-- Name Input -->
+        <div class="input name-input">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+
+        <!-- Email Input -->
+        <div class="input email-input">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="example@email.com">
+          <div class="info no-state error-state">
+            <img src="./assets/images/icon-info.svg">
+            <span>
+              Enter a valid email.
+            </span>
+          </div>
+        </div>
+
+        <!-- Github Input -->
+        <div class="input github-input">
+          <label for="github">GitHub Username</label>
+          <input type="text" name="github" id="github" placeholder="@yourusername">
+        </div>
+
+        <!-- Submit Button -->
+        <div class="submit-btn">
+          <button type="submit">Generate My Ticket</button>
+        </div>
+      </form>
+
+    </section>
+    <!-- Form Section Ends -->
+
+    <!-- Generated tickets starts -->
+    <!-- Generated tickets ends -->
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
